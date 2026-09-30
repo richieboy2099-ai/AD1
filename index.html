@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artificial Dynamics - We are future ready. Deep Tech Enterprise AI.">
+    <title>Artificial Dynamics</title>
+    <!-- We will use Inter to approximate the Avenir feel if it's not present, and setup fallback -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo"><img src="images/logo.svg" alt="Artificial Dynamics" class="logo-img"></div>
+            <nav class="nav-pill">
+                <a href="#" data-i18n="nav_home">INICIO</a>
+                <a href="#" data-i18n="nav_about">NOSOTROS</a>
+                <a href="#" data-i18n="nav_offer">NUESTRA OFERTA</a>
+                <a href="#" data-i18n="nav_success">NUESTRAS HISTORIAS DE ÉXITO</a>
+                <a href="#" data-i18n="nav_stay">STAY DYNAMIC</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary" data-i18n="nav_contact">CONTÁCTANOS</button>
+                <div class="lang-selector">
+                    <select id="lang-select" aria-label="Selector de idioma">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="pt">PT</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <video class="hero-video-bg" autoplay loop muted playsinline>
+                <source src="videos/background.mp4" type="video/mp4">
+            </video>
+            <div class="hero-orb"></div>
+            <div class="container hero-container">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title" data-i18n="hero_title">WE ARE <br><strong>FUTURE</strong> READY.</h1>
+                </div>
+                <div class="hero-sub">
+                    <div class="hero-sub-text">
+                        <span class="hero-sub-tag">Deep Tech Enterprise AI.</span>
+                        <p class="hero-sub-desc" data-i18n="hero_subtitle">Somos el único laboratorio de
+                            América<br>Latina con la misión de convertirse en<br>la fábrica insignia de <i>AI Deep
+                                Tech</i>.</p>
+                    </div>
+                    <div class="hero-sub-divider"></div>
+                    <button class="btn btn-conocenos" data-i18n="btn_conocenos">CONOCENOS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll-based Video Carousel Section -->
+        <section class="video-carousel-section" id="video-carousel">
+            <div class="carousel-sticky">
+
+                <video class="carousel-video active" src="videos/radius.mp4" autoplay loop muted playsinline></video>
+                <video class="carousel-video" src="videos/kvanto.mp4" autoplay loop muted playsinline></video>
+                <video class="carousel-video" src="videos/go-sharp.mp4" autoplay loop muted playsinline></video>
+                <video class="carousel-video" src="videos/viz.mp4" autoplay loop muted playsinline></video>
+
+                <div class="carousel-overlay-content container">
+                    <!-- Cards -->
+                    <div class="carousel-card active">
+                        <h3 data-i18n="logistics_title">1. AI Logistics.</h3>
+                        <p data-i18n="logistics_desc">Solución que asigna rutas al personal, supervisa y controla el
+                            estado de las entregas y garantiza una correcta ejecución desde la base de operaciones hasta
+                            el punto final de entrega.</p>
+                    </div>
+
+                    <div class="carousel-card">
+                        <h3 data-i18n="kvanto_title">2. AI Sales.</h3>
+                        <p data-i18n="kvanto_desc">Ejecución y monitoreo del desempeño de tu fuerza de campo en tiempo
+                            real y el punto de venta con cumplimiento de las visitas y la comunicación.</p>
+                    </div>
+
+                    <div class="carousel-card">
+                        <h3 data-i18n="gosharp_title">3. AI Trade.</h3>
+                        <p data-i18n="gosharp_desc">Vista de toda la operación de ventas centralizada en una sola
+                            herramienta con capacidades de toma de decisiones basadas en un motor de inteligencia
+                            artificial.</p>
+                    </div>
+
+                    <div class="carousel-card">
+                        <h3 data-i18n="radyus_title">4. AI Vision.</h3>
+                        <p data-i18n="radyus_desc">Captura y enriquecimiento de datos de los shopper y su experiencia en
+                            la tienda. Analizar con redes neuronales la data en tiempo real generando insights..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section (Applied AI + Offers) -->
+        <section class="solutions-section fade-in">
+            <div class="solutions-container">
+                <!-- Applied AI Box -->
+                <div class="applied-ai-box">
+                    <div class="ai-label-col">
+                        <div class="label-pill white-pill">
+                            <span class="dot"></span> <span data-i18n="label_integrated">INTELIGENCIA INTEGRADA</span>
+                        </div>
+                    </div>
+                    <div class="ai-content-col">
+                        <h2><span data-i18n="ai_title_1">Inteligencia Artificial Aplicada</span> <span class="accent highlight" data-i18n="ai_title_2">al Negocio.</span></h2>
+                        <p data-i18n="ai_desc">Creamos soluciones de IA diseñadas para resolver retos complejos en entornos reales. Integramos analítica avanzada, automatización y desarrollo de software para ayudar a las organizaciones a optimizar operaciones, anticipar escenarios y tomar decisiones con mayor precisión.</p>
+                        <button class="btn btn-primary" data-i18n="btn_interest">ME INTERESA</button>
+                    </div>
+                </div>
+
+                <!-- Offers Grid -->
+                <div class="offers-grid">
+                    <div class="offer-card kvanto hover-opacity">
+                        <img src="images/logo-kvanto.svg" alt="Kvanto Logo" class="card-logo-img">
+                        <h4 data-i18n="offer_kvanto_title">AI Sales</h4>
+                        <p data-i18n="offer_kvanto_desc">Ejecución y monitoreo del desempeño de tu fuerza de campo</p>
+                    </div>
+                    <div class="offer-card gosharp hover-opacity">
+                        <img src="images/logo-gosharp.svg" alt="GOSHARP Logo" class="card-logo-img">
+                        <h4 data-i18n="offer_gosharp_title">AI Trade</h4>
+                        <p data-i18n="offer_gosharp_desc">Vista de la operación de ventas centralizada en una sola herramienta.</p>
+                    </div>
+                    <div class="offer-card radyus hover-opacity">
+                        <img src="images/logo-radyus.svg" alt="Radyus Logo" class="card-logo-img">
+                        <h4 data-i18n="offer_radyus_title">AI Logistics</h4>
+                        <p data-i18n="offer_radyus_desc">Asigna rutas al personal, supervisa y controla el estado de las entregas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tagline -->
+        <section class="tagline-section fade-in">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <h2 class="tagline">
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                        <span data-i18n="tagline_full">Touching tomorrow, today</span><span class="spacer">&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pioneers Section -->
+        <section class="pioneers fade-in">
+            <div class="container">
+                <div class="section-divider"></div>
+                
+                <div class="pioneers-header">
+                    <div class="label-pill white-pill pill-inline">
+                        <span class="dot"></span> <span data-i18n="label_who_we_are">¿QUIENES SOMOS?</span>
+                    </div>
+                </div>
+
+                <div class="pioneers-container">
+                    <div class="pioneers-visual">
+                        <img src="images/who-1.png" alt="Quiénes Somos" class="pioneers-img">
+                    </div>
+                    <div class="pioneers-content">
+                        <h2><span data-i18n="pioneers_title_1">Pioneros</span> <span class="accent highlight"
+                                data-i18n="pioneers_title_2">en IA</span></h2>
+                        <p class="pioneers-lead" data-i18n="pioneers_lead">Estamos convencidos que la IA puede transformar dramáticamente la experiencia de negocio.</p>
+                        <p class="pioneers-desc" data-i18n="pioneers_desc">Somos un equipo multidisciplinario de ingenieros, consultores y ejecutivos de clase mundial con profundo conocimiento en analítica avanzada, software empresarial, big data e Inteligencia Artificial aplicada a los negocios.</p>
+                        <button class="btn btn-primary btn-pioneers" data-i18n="btn_know_more">CONOCER MÁS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsroom Section -->
+        <section class="newsroom fade-in">
+            <div class="container">
+                <div class="newsroom-header">
+                    <div class="label-pill white-pill pill-inline">
+                        <span class="dot"></span> <span data-i18n="label_success_stories">CONOCE NUESTROS ÉXITOS</span>
+                    </div>
+                    <h2 data-i18n="newsroom_title">Newsroom</h2>
+                </div>
+
+                <div class="news-main-card hover-lift">
+                    <div class="news-image" style="background-image: url('images/news1.png');"></div>
+                    <div class="news-info">
+                        <div class="news-meta">
+                            <div class="label-pill white-pill pill-inline" style="margin-bottom:0;"><span class="dot"></span> <span data-i18n="label_newsroom">NEWSROOM</span></div>
+                            <span class="news-date" data-i18n="news_main_date">Septiembre 04 2025</span>
+                        </div>
+                        <h3 data-i18n="news_main_title">Gustavo Gomes - De Ejecutivo Expatriado a CEO de Empresa de Dados no México</h3>
+                        <p data-i18n="news_main_desc">Recientemente Gustavo Gomes nuestro CEO, tuvo una plática muy interesante donde nos muestra porqué es un visionario en el campo de la Inteligencia Artificial.</p>
+                        <button class="btn btn-primary" data-i18n="btn_know_more">CONOCER MÁS</button>
+                    </div>
+                </div>
+
+                <div class="news-grid">
+                    <div class="news-sub-card news-bg-1 hover-opacity">
+                        <div class="news-meta">
+                            <div class="label-pill white-pill pill-inline" style="margin-bottom:0;"><span class="dot"></span> <span data-i18n="label_newsroom">NEWSROOM</span></div>
+                            <span class="news-date" data-i18n="news_main_date">Septiembre 04 2025</span>
+                        </div>
+                        <h4 data-i18n="news_sub_1_title">Día de los Derechos de la Niñez y Adolescencia</h4>
+                        <button class="btn-text" data-i18n="btn_know_more">CONOCER MÁS</button>
+                    </div>
+                    <div class="news-sub-card news-bg-2 hover-opacity">
+                        <div class="news-meta">
+                            <div class="label-pill white-pill pill-inline" style="margin-bottom:0;"><span class="dot"></span> <span data-i18n="label_newsroom">NEWSROOM</span></div>
+                            <span class="news-date" data-i18n="news_main_date">Septiembre 04 2025</span>
+                        </div>
+                        <h4 data-i18n="news_sub_1_title">Día de los Derechos de la Niñez y Adolescencia</h4>
+                        <button class="btn-text" data-i18n="btn_know_more">CONOCER MÁS</button>
+                    </div>
+                    <div class="news-sub-card news-bg-3 hover-opacity">
+                        <div class="news-meta">
+                            <div class="label-pill white-pill pill-inline" style="margin-bottom:0;"><span class="dot"></span> <span data-i18n="label_newsroom">NEWSROOM</span></div>
+                            <span class="news-date" data-i18n="news_main_date">Septiembre 04 2025</span>
+                        </div>
+                        <h4 data-i18n="news_sub_1_title">Día de los Derechos de la Niñez y Adolescencia</h4>
+                        <button class="btn-text" data-i18n="btn_know_more">CONOCER MÁS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer fade-in">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-slogan" data-i18n="footer_slogan">Estamos convencidos que la IA puede transformar dramáticamente la experiencia de negocio.</div>
+                    <button class="btn-contact-footer"><span class="dot"></span> <span data-i18n="nav_contact" style="font-weight:inherit;">CONTÁCTANOS</span></button>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-nav-col">
+                        <h5 data-i18n="nav_home_title">Inicio</h5>
+                        <ul>
+                            <li><a href="#" data-i18n="nav_offer">NUESTRA OFERTA</a></li>
+                            <li><a href="#" data-i18n="nav_success">NUESTRAS HISTORIAS DE ÉXITO</a></li>
+                            <li><a href="#" data-i18n="nav_stay">STAY DYNAMIC</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h5 data-i18n="footer_follow">Síguenos</h5>
+                        <ul>
+                            <li><a href="#">LINKEDIN</a></li>
+                            <li><a href="#">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <img src="images/logo.svg" alt="Artificial Dynamics" class="footer-logo-img">
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
